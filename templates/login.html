@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<nav class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto px-4">
+        <h1 class="text-xl font-bold">Votesphere</h1>
+    </div>
+</nav>
+
+<main class="container mt-20 flex justify-center items-center h-full">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-4">Login</h2>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email" required>
+                <!-- <p class="text-red-500 text-xs italic">Please enter a valid email address.</p> -->
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="password">Password</label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Your Password" required>
+            </div>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full mb-4" type="submit">
+                Login
+            </button>
+        </form>
+        <div class="text-center">
+            <p class="text-gray-700">Don't have an account? <a href="#" class="text-blue-500">Register now</a></p>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-gray-900 text-white py-4 text-center fixed bottom-0 w-full">
+    <p>Copyright &copy; Votesphere</p>
+</footer>
+
+</body>
+</html>

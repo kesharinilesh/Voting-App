@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def home(request):
-    return HttpResponse("This is my Voting App home Page")
+    return render(request,'homepage.html')

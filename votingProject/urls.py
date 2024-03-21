@@ -22,5 +22,6 @@ urlpatterns = [
     path('votingHome/', include('votingHome.urls')),
     path('votingWebsite/', include('votingWebsite.urls')),
     path('votingResult/', include('votingResult.urls')),
-    path('votingContact/', include('votingContact.urls'))
+    path('votingContact/', include('votingContact.urls')),
+    path('votingLogin/', include('votingLogin.urls'))
 ]
