@@ -11,30 +11,7 @@
         />
     </head>
     <body>
-        <header class="bg-gray-900 text-white py-4">
-            <div class="container mx-auto px-4 flex justify-between items-center">
-                <h1 class="text-xl ml-4 font-bold">Votesphere</h1>
-                <nav>
-                    <ul class="flex space-x-10 mr-4">
-                        <li>
-                            <a href="#" class="hover:text-gray-400">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-gray-400">Polls</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-gray-400">Results</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-gray-400">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:text-gray-400">Login / Register</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+        {%include 'header.html'%}
 
         <main class="container mx-auto p-4 h-full">
             <div class="container mx-auto flex items-center">
@@ -47,8 +24,6 @@
             </div>
         </main>
 
-        <footer class="fixed bottom-0 w-full bg-gray-800 text-white py-4 text-center">
-            <p>Copyright &copy; Votesphere</p>
-        </footer>
+        {%include 'footer.html'%}
     </body>
 </html>
