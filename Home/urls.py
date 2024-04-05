@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import include,path
-from votingHome import views
+from Home import views
 
 app_name='votingProject'
 

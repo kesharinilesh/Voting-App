@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import include,path
-from votingResult import views
+from Contact import views
 urlpatterns = [
-    path('', views.result, name='result')
+    path('', views.contact, name='contact')
 ]

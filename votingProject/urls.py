@@ -1,5 +1,5 @@
 """
-URL configuration for votingProject project.
+URL configuration for Project project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -19,9 +19,8 @@ from django.urls import include,path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('votingHome/', include('votingHome.urls')),
-    path('votingWebsite/', include('votingWebsite.urls')),
-    path('votingResult/', include('votingResult.urls')),
-    path('votingContact/', include('votingContact.urls')),
-    path('votingLogin/', include('votingLogin.urls'))
+    path('', include('Home.urls')),
+    path('Polls/', include('Polls.urls')),
+    path('Contact/', include('Contact.urls')),
+    path('Login/', include('Login.urls'))
 ]
