@@ -8,7 +8,34 @@
 </head>
 <body class="bg-gray-100">
 
-{%include 'header.html'%}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>header</title>
+    </head>
+    <body>
+        <header class="bg-gray-900 text-white py-4">
+            <div class="container mx-auto px-4 flex justify-between items-center">
+                <h1 class="text-xl ml-4 font-bold">VoteCircle</h1>
+                <nav>
+                    <ul class="flex space-x-10 mr-4">
+                        <li>
+                            <a href="{%url 'votingProject:homepage'%}" class="hover:text-gray-400">Home</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'votingProject:polls' %}" class="hover:text-gray-400">Polls</a>
+                        </li>
+                        <li>
+                            <a href="{%url 'votingProject:contact'%}" class="hover:text-gray-400">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
+    </html>
 
 <main class="container mt-20 flex justify-center items-center h-full">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">

@@ -14,7 +14,5 @@ def login(request):
 def homepage(request):
     return render(request,'homepage.html')
 
-# def polls(request):
-#     return render(request,'polls.html')
-def index(request):
-    return render(request, 'pages/index.html')
+def polls(request):
+    return render(request, 'polls.html')
